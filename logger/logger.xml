@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<domain>
+    <class name="Logger">
+        <member name="formatter" type_t="union Formatter *"/>
+        <member name="handler" type_t="union LoggerHandler *"/>
+        <method name="log">
+            <param name="level" type_t="enum LogLevel"/>
+            <param name="line_num" type_t="uint32_t"/>
+            <param name="file_name" type_t="char const *"/>
+            <param name="msg" type_t="char const *"/>
+            <param name="va_args" type_t="va_list"/>
+        </method>
+    </class>
+    <class name="Formatter">
+        <member name="facility_name" type_t="char const *"/>
+        <member name="log_level" type_t="enum LogLevel"/>
+        <member name="format" type_t="char const *"/>
+        <method name="format" return_t="char const *">
+            <param name="level" type_t="enum LogLevel"/>
+            <param name="line_num" type_t="uint32_t"/>
+            <param name="file_name" type_t="char const *"/>
+            <param name="msg" type_t="char const *"/>
+            <param name="va_args" type_t="va_list"/>
+        </method>
+    </class>
+    <class name="LoggerHandler">
+        <method name="log">
+            <param name="level" type_t="enum LogLevel"/>
+            <param name="msg" type_t="char const *"/>
+        </method>
+    </class>
+</domain>
