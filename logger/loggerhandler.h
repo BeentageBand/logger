@@ -1,7 +1,14 @@
 #ifndef LOGGERHANDLER_H
 #define LOGGERHANDLER_H
+
 #include "logger-level.h"
 #include "cobject/cobject.h"
+
+#ifdef LOGGERHANDLER_IMPLEMENTATION 
+#define _private
+#else
+#define _private const
+#endif 
 
 #ifdef __cplusplus
 extern "C" {
@@ -38,4 +45,4 @@ extern void LoggerHandler_log(union LoggerHandler * const loggerhandler, enum Lo
 #ifdef __cplusplus
 }
 #endif
-#endif /* LOGGERHANDLER_H */
+#endif /*LOGGERHANDLER_H*/

@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "logger.h"
+#include "logger/logger.h"
 
 static union Logger Logger = {NULL};
 static union LoggerHandler LoggerHandler = {NULL};

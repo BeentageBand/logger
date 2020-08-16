@@ -52,3 +52,17 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Autotools, Automake, Autoconf
+.dirstamp
+.deps
+.libs
+*.m4
+autom4te.cache
+build-aux
+config.*
+configure
+libtool
+Makefile.in
+Makefile
+unittest
+
