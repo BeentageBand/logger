@@ -3,6 +3,7 @@
 
 #include "logger-level.h"
 #include "cobject/cobject.h"
+#include <stdarg.h>
 
 #ifdef FORMATTER_IMPLEMENTATION 
 #define _private
