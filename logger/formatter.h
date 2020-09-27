@@ -49,4 +49,5 @@ extern char const * Formatter_format(union Formatter * const formatter, enum Log
 #ifdef __cplusplus
 }
 #endif
+#undef _private
 #endif /*FORMATTER_H*/

@@ -45,4 +45,5 @@ extern void LoggerHandler_log(union LoggerHandler * const loggerhandler, enum Lo
 #ifdef __cplusplus
 }
 #endif
+#undef _private
 #endif /*LOGGERHANDLER_H*/

@@ -51,4 +51,5 @@ extern void Logger_log(union Logger * const logger, enum LogLevel const level, u
 #ifdef __cplusplus
 }
 #endif
+#undef _private
 #endif /*LOGGER_H*/
